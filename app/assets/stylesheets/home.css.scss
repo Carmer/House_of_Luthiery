@@ -1,0 +1,47 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+       font-family: College;
+       src: url(fine_college.ttf) format("truetype");
+   }
+
+#title {
+  margin-left: 3%;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1  {
+  font-family: College;
+  font-size: 80px !important;
+}
+
+#footer_list li {
+  display: inline;
+
+}
+
+.page_footer p {
+  font-size: 10px ;
+}
+
+#footer_list {
+  font-size: 8px;
+}
+
+.page_footer {
+   height: 10%;
+   position: fixed;
+   bottom: 0px;
+   width:100%;
+}
