@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
-  def front_page
+  def home
   end
 
   def about
