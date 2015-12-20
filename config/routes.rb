@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "/home",             to: "home#home",                    as: :home
 
 
-  get "signature-models/:model", to: "instruments#show",       as: :signature_model
-  get "custom-shop/:model",      to: "instruments#show",       as: :custom_model
+  get "/signature-models/:model", to: "instruments#show",       as: :signature_model
+  get "/custom-shop/:model",      to: "instruments#show",       as: :custom_model
+  get "/contact",                 to: "home#contact",           as: :contact
 end
