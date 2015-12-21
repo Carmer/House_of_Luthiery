@@ -1,0 +1,44 @@
+#instruments h1 {
+  border-bottom: solid white;
+}
+
+#instruments h3 {
+  margin-top: 10%;
+  font-style: underlined;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  flex-direction: column;
+  background-color: black;
+  font-family: CODE;
+  color: white;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1 {
+  font-family: CODE;
+  font-size: 80px !important;
+  text-align: center;
+  color: white;
+}
+
+h5 {
+  font-family: CODE;
+  font-size: 12px !important;
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  font-family: CODE;
+  // font-size: 12px !important;
+  text-align: center;
+  color: white;
+}

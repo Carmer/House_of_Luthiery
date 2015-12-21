@@ -2,14 +2,24 @@
 <html>
 <head>
   <title>HouseOfLuthiery</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
+  <p id="icons">
+    <a href="https://www.facebook.com/houseofluthiery"><%= image_tag "facebook.png" %></a>
+    <a href="https://www.instagram.com/naniahouseofluthiery/"><%= image_tag "instagram.png" %></a>
+  </p>
+    <%= render "shared/header" %>
+    <% flash.each do |name, msg| %>
+      <% if msg.is_a?(String) %>
+        <%= content_tag :div, msg, :class => "flash_#{name}" %>
+      <% end %>
+    <% end %>
+  <!-- <div class="container"> -->
     <%= yield %>
-  </div>
+  <!-- </div> -->
     <%= render "shared/footer" %>
 </body>
 </html>

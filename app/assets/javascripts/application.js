@@ -12,5 +12,29 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require materialize-sprockets
 //= require_tree .
+
+
+
+$(document).ready(function(){
+  $( ".cross" ).hide();
+    $( ".menu" ).hide();
+    $( ".hamburger" ).click(function() {
+      console.log("click burger");
+      $( ".menu" ).toggle( "slow", function() {
+      $( ".hamburger" ).hide();
+      $( ".cross" ).show();
+      });
+  });
+
+  $( ".cross" ).click(function() {
+    console.log("click cross");
+  $( ".menu" ).toggle( "slow", function() {
+  $( ".cross" ).hide();
+  $( ".hamburger" ).show();
+  });
+  });
+
+  console.log("loaded")
+});

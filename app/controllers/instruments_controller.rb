@@ -1,8 +1,8 @@
 class InstrumentsController < ApplicationController
 
-  def custom_shop
+  def index
   end
 
-  def signature_models
+  def show
   end
 end
