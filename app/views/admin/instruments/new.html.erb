@@ -1,0 +1,15 @@
+<div id="new_instrument">
+  <div class="container">
+  <h1>Add New Instrument to the Vault</h1>
+  <%= form_for @instrument, url: "/admin/instruments" do |f| %>
+    <%= f.label "Instruments Name"%><br>
+    <%= f.text_field :name%>
+    <%= text_area_tag "specs" %>
+    <%= label_tag "Instrument Specs - ** Separate with a comma!!**" %><br>
+    <%= text_area_tag "options" %>
+    <%= label_tag "Instrument Options - ** Separate with a comma!!**" %><br>
+    <%= f.submit "Add It", class: "black-text" %>
+
+  <% end %>
+  </div>
+</div>
