@@ -1,15 +1,33 @@
 <div id="new_instrument">
   <div class="container">
   <h1>Add New Instrument to the Vault</h1>
-  <%= form_for @instrument, url: "/admin/instruments" do |f| %>
-    <%= f.label "Instruments Name"%><br>
+  <%= form_for @instrument, url: "/instruments" do |f| %>
+    <%= f.label "Instrument's Name"%><br>
     <%= f.text_field :name%>
+    <div class="switch contact-font-form">
+    <label>
+      Signature Instrument
+      <%= check_box_tag "instrument[custom]", "true"  %>
+      <!-- <input type="checkbox" name="instrument[custom]", checked="true"> -->
+      <span class="lever"></span>
+      Custom Instrument
+    </label>
+  </div>
     <%= text_area_tag "specs" %>
-    <%= label_tag "Instrument Specs - ** Separate with a comma!!**" %><br>
+    <%= label_tag "Instrument Specs - ** Separate with a comma  **" %><br>
     <%= text_area_tag "options" %>
-    <%= label_tag "Instrument Options - ** Separate with a comma!!**" %><br>
-    <%= f.submit "Add It", class: "black-text" %>
-
+    <%= label_tag "Instrument Options - ** Separate with a comma  **" %><br>
+    <%= f.label :image, "-* This will be the Instruments Main Image *-" %>
+    <%= f.file_field :image %>
+<br>
+    <%= label_tag "Additional Photos:" %><br>
+    <%= file_field_tag "photos[image1]"  %><br>
+    <%= file_field_tag "photos[image2]"  %><br>
+    <%= file_field_tag "photos[image3]"  %><br>
+    <%= file_field_tag "photos[image4]"  %><br>
+    <%= file_field_tag "photos[image5]"  %><br>
+    <%= file_field_tag "photos[image6]"  %><br>
+    <%= f.submit "Add It", class: " btn-large white black-text" %>
   <% end %>
   </div>
 </div>

@@ -1,0 +1,32 @@
+#research {
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+  background-image: url("reserach.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content {
+  background-color: black;
+  vertical-align: center;
+  opacity: .8;
+  margin: 5%;
+  padding: 25px;
+  border-radius: 3px;
+}
+
+.icons img {
+  height: 50px;
+  width: 50px;
+}

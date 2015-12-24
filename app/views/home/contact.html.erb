@@ -1,45 +1,25 @@
 <div id="contact">
-  <h1>Contact Us Here</h1>
+  <div class="container">
+    <div class="content">
 
-  <div class="row contact-form-div">
-  <form class="col s8" action="/contact-email" method= "post">
-    <div class="row">
-      <div class="col s4">
-        <input id="first_name" type="text" name="first_name">
-        <label for="first_name" class="white-text code-font-form">First Name</label>
-      </div>
-      <div class="col s4">
-        <input id="last_name" type="text" name="last_name">
-        <label for="last_name" class="white-text code-font-form">Last Name</label>
-      </div>
-      <div class="row">
-        <div class="col s8">
-          <input id="email" type="email" name="email_address">
-          <label for="email" class="white-text code-font-form">Email</label>
-        </div>
-      </div>
-    </div>
-      <label class="white-text code-font-form">Subject</label>
-      <div class="row">
-        <select class="browser-default col s8">
-          <option value="" disabled selected class="white-text code-font-form">Subject</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-        </select>
-      </div>
-    <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s11">
-          <textarea id="textarea1" class="materialize-textarea" class="white-text code-font-form" name="message" length="250"></textarea>
-          <label for="textarea1" class="white-text code-font-form">What's Up?</label>
-        </div>
-        <button class="btn waves-effect waves-light black" id="contact-form-submit" type="submit" >Send</button>
-      </div>
-    </form>
+    <h4 class="center">For Additional Information:</h4>
+    <ul>
+      <li>Email : info@houseofluthiery.com</li>
+      <li>Phone : ( 574 ) 339-0554</li>
+      <li>
+        <p class="icons">
+          <a href="https://www.facebook.com/houseofluthiery" class="white-text"><%= image_tag "facebook.png" %> Facebook</a>
+        </p>
+        <p class="icons">
+          <a href="https://www.instagram.com/naniahouseofluthiery/" class="white-text"><%= image_tag "instagram.png" %>Instagram</a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <%= link_to "Contact Us Directly", contact_us_path, class: "btn-large white black-text", id: "contact-button" %>
+        </p>
+      </li>
+    </ul>
   </div>
-  </form>
 </div>
-
 </div>

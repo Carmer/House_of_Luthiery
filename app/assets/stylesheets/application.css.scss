@@ -19,6 +19,11 @@ $primary-color: color("white", "lighten-2") !default;
 @import 'materialize';
 
 
+.flash_success {
+  background-color: white;
+  color: black;
+}
+
 .hamburger {
   background: none;
   position:absolute;
@@ -30,7 +35,7 @@ $primary-color: color("white", "lighten-2") !default;
   background-color: black !important;
   color:#fff;
   border:0;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size:1.4em;
   font-weight:bold;
   cursor:pointer;
@@ -48,7 +53,7 @@ $primary-color: color("white", "lighten-2") !default;
   background-color: black !important;
   color:#fff;
   border:0;
-  border-radius: 2px;
+  border-radius: 3px;
   font-size:3em;
   line-height:65px;
   font-weight:bold;

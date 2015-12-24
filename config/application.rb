@@ -17,6 +17,8 @@ Bundler.require(*Rails.groups)
 
 module HouseOfLuthiery
   class Application < Rails::Application
+    require Rails.root.join("lib/custom_public_exceptions")
+    config.exceptions_app = CustomPublicExceptions.new(Rails.public_path)
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -33,6 +35,6 @@ module HouseOfLuthiery
     config.active_record.raise_in_transactional_callbacks = true
 
     config.assets.enabled = true
-    config.assets.paths << "#{Rails.root}/app/assets/fonts"  
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
   end
 end

@@ -1,0 +1,32 @@
+<div id="instrument-show">
+  <div class="container">
+    <div class="row">
+        <h3 class="col s12"><%= link_to "#{@instrument.name}", instrument_path(slug: @instrument.slug), class: "white-text" %></h3>
+
+      <div class="col s6">
+        <%= image_tag @instrument.image.url(:large) %>
+        <div class="instrument-thumbs">
+          <% @instrument.photos.each do |photo| %>
+            <%= image_tag photo.image.url(:thumb) %>
+          <% end %>
+        </div>
+      </div>
+        <div class="col s6">
+          <ul>
+            <h4>Specifications:</h4>
+            <% @instrument.specs.each do |spec| %>
+              <li>- <%= spec.description %></li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="col s6 offset-s6">
+          <ul>
+            <h4>Options:</h4>
+            <% @instrument.options.each do |option| %>
+              <li>- <%= option.description %></li>
+            <% end %>
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>

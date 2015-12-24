@@ -4,7 +4,14 @@
 
 #instruments h3 {
   margin-top: 10%;
-  font-style: underlined;
+}
+
+#instruments h2 {
+  border-bottom: solid white;
+}
+
+.admin-buttons {
+  width: 450px;
 }
 
 
@@ -41,4 +48,8 @@ h3 {
   // font-size: 12px !important;
   text-align: center;
   color: white;
+}
+
+.switch {
+  font-size: 35px;
 }

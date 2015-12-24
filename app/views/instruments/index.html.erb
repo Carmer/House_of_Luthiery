@@ -1,0 +1,21 @@
+<div id="instruments">
+  <div class="container">
+  <div class="row">
+    <h1 class="col s8 offset-s2">Instruments</h1>
+  </div>
+  <div class="row">
+    <h2 class="col s6 offset-s3 center model-type">Signature Models</h2>
+  </div>
+    <% @signature_models.each do |model| %>
+      <% @instrument = model %>
+      <%= render "shared/instrument", {locals: @instrument} %>
+    <% end %>
+    <div class="row">
+      <h2 class="col s6 offset-s3 center model-type">Custom Builds</h2>
+    </div>
+    <% @custom_models.each do |model| %>
+      <% @instrument = model %>
+      <%= render "shared/instrument", {locals: @instrument} %>
+    <% end %>
+  </div>
+</div>

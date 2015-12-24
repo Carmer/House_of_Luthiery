@@ -1,0 +1,24 @@
+<div id="instruments">
+  <div class="container">
+    <h1>Edit An Instrument</h1>
+    <%= form_for @instrument, url: "/instruments/#{@instrument.slug}" do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: "#{@instrument.name}" %>
+    <%= label_tag :specs %>
+    <%= text_area_tag :specs, @instrument.print_specs %>
+    <%= label_tag :options %>
+    <%= text_area_tag :options, @instrument.print_options %>
+    <%= f.label :image, "-* This will be the Instruments Main Image *->" %>
+    <%= f.file_field :image %>
+<br>
+    <%= label_tag "Additional Photos:" %><br>
+    <%= file_field_tag "photos[image1]"  %><br>
+    <%= file_field_tag "photos[image2]"  %><br>
+    <%= file_field_tag "photos[image3]"  %><br>
+    <%= file_field_tag "photos[image4]"  %><br>
+    <%= file_field_tag "photos[image5]"  %><br>
+    <%= file_field_tag "photos[image6]"  %><br><br>
+    <%= f.submit "Fix It Up", class: "btn-large white black-text" %>
+    <% end %>
+  </div>
+</div>
