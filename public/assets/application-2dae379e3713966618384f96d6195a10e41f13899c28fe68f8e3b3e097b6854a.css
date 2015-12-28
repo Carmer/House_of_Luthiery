@@ -7,7 +7,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("in_the_shop.jpg");
+  background-image: url("about-us.jpg");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -17,7 +17,7 @@
 }
 /* line 2, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/contact.css.scss */
 #contact {
-  background-image: url("contact.jpg");
+  background-image: url("contact-photo.jpg");
   position: absolute;
   padding: 0;
   margin: 0;
@@ -243,17 +243,7 @@ h3 {
   background-size: cover;
 }
 
-/* line 20, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/research.css.scss */
-.content {
-  background-color: black;
-  vertical-align: center;
-  opacity: .8;
-  margin: 5%;
-  padding: 25px;
-  border-radius: 3px;
-}
-
-/* line 29, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/research.css.scss */
+/* line 21, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/research.css.scss */
 .icons img {
   height: 50px;
   width: 50px;
@@ -16134,4 +16124,14 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 /* line 99, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 #title {
   margin-left: 3%;
+}
+
+/* line 104, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+.content {
+  background-color: black;
+  vertical-align: center;
+  opacity: .6;
+  margin: 5%;
+  padding: 25px;
+  border-radius: 3px;
 }
