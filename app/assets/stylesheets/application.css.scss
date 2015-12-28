@@ -83,8 +83,20 @@ $primary-color: color("white", "lighten-2") !default;
   z-index: 10000000000000000000000;
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: 100px;
   right: 50px;
+  text-align: right;
+  height: 50px;
+  width: 50px;
+}
+
+#logo {
+  background: none;
+  z-index: 10000000000000000000000;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 75px;
   text-align: right;
   height: 50px;
   width: 50px;
@@ -93,6 +105,11 @@ $primary-color: color("white", "lighten-2") !default;
 #icons img {
   height: 50px;
   width: 50px;
+}
+
+#logo img {
+  height: 100px;
+  width: 100px;
 }
 
 #title {
