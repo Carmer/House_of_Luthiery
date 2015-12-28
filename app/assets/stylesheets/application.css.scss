@@ -98,3 +98,13 @@ $primary-color: color("white", "lighten-2") !default;
 #title {
   margin-left: 3%;
 }
+
+
+.content {
+  background-color: black;
+  vertical-align: center;
+  opacity: .6;
+  margin: 5%;
+  padding: 25px;
+  border-radius: 3px;
+}
