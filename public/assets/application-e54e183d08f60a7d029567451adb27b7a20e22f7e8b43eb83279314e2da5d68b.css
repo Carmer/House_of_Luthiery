@@ -19,7 +19,7 @@
 /* line 20, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/about.css.scss */
 .about_text {
   padding-top: 150px;
-  color: #faebd7;
+  color: white;
 }
 /* line 2, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/contact.css.scss */
 #contact {
@@ -62,8 +62,13 @@
 }
 
 /* line 40, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/contact.css.scss */
+.contact-info {
+  margin-top: 15%;
+}
+
+/* line 44, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/contact.css.scss */
 #contact-button {
-  margin-left: 30%;
+  font-size: 18px !important;
 }
 @font-face {
   font-family: 'CODE';
