@@ -18,6 +18,16 @@
 $primary-color: color("white", "lighten-2") !default;
 @import 'materialize';
 
+@font-face {
+  font-family: 'SANS';
+  src: url('Arctik 1.ttf') format("truetype");
+  color: white !important;
+}
+
+p {
+  font-family: SANS;
+}
+
 
 .flash_success {
   background-color: white;
