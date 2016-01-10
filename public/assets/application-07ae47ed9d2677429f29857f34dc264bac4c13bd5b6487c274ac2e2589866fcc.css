@@ -15,6 +15,12 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
+/* line 20, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/about.css.scss */
+.about_text {
+  padding-top: 150px;
+  color: #faebd7;
+}
 /* line 2, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/contact.css.scss */
 #contact {
   background-image: url("contact-photo.jpg");
@@ -65,6 +71,15 @@
   color: white !important;
 }
 /* line 11, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+.mission_statement {
+  font-family: CODE;
+  font-size: 16px !important;
+  text-align: center;
+  color: white;
+  margin-top: -15px;
+}
+
+/* line 20, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 #home {
   position: fixed;
   padding: 0;
@@ -82,31 +97,32 @@
   background-size: cover;
 }
 
-/* line 30, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 39, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 #footer_list li {
   display: inline;
 }
 
-/* line 34, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
-.page_footer p {
-  font-size: 10px;
+/* line 43, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+.copyright {
+  font-family: CODE;
+  font-size: 11px;
 }
 
-/* line 38, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 48, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 #footer_list {
-  font-size: 8px;
+  font-size: 12px;
 }
 
-/* line 42, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 52, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 .page_footer {
   position: fixed;
   bottom: 0px;
-  height: 45px;
+  height: 55px;
   width: 100%;
   margin-top: 50px;
 }
 
-/* line 51, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 61, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 header {
   width: 100%;
   background: #1d1f20;
@@ -115,49 +131,49 @@ header {
   line-height: 50px;
 }
 
-/* line 59, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 69, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 .home-buttons {
   font-family: CODE;
 }
 
-/* line 63, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 73, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 .home-buttons button {
   min-width: 100px;
 }
 
-/* line 67, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 77, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 .home-buttons.col.s6.offset-s3.center-align {
   display: inline-block;
   margin-left: 35%;
   margin-top: 20%;
 }
 
-/* line 75, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 85, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 #to-the-shop button:hover {
   color: #fff;
   text-decoration: none;
   background-color: #AAC0BB;
 }
 
-/* line 81, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 91, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 #to-the-lab button:hover {
   color: #fff;
   text-decoration: none;
   background-color: #AAC0BB;
 }
 
-/* line 88, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 98, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 a#to-the-shop {
   border: 1px solid white;
 }
 
-/* line 93, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 103, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 a#to-the-lab {
   border: 1px solid white;
   border-radius: 2px;
 }
 
-/* line 98, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
+/* line 108, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/home.css.scss */
 .code-font-form {
   font-family: CODE;
   font-size: 18px;
@@ -207,21 +223,13 @@ h1 {
 }
 
 /* line 39, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/instruments.css.scss */
-h5 {
-  font-family: CODE;
-  font-size: 12px !important;
-  text-align: center;
-  color: white;
-}
-
-/* line 46, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/instruments.css.scss */
 h3 {
   font-family: CODE;
   text-align: center;
   color: white;
 }
 
-/* line 53, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/instruments.css.scss */
+/* line 46, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/instruments.css.scss */
 .switch {
   font-size: 35px;
 }
@@ -15985,13 +15993,23 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em;
   }
 }
-/* line 23, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+@font-face {
+  font-family: 'SANS';
+  src: url("Arctik 1.ttf") format("truetype");
+  color: white !important;
+}
+/* line 28, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+p {
+  font-family: SANS;
+}
+
+/* line 33, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .flash_success {
   background-color: white;
   color: black;
 }
 
-/* line 28, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 38, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .hamburger {
   background: none;
   position: absolute;
@@ -16011,7 +16029,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   z-index: 10000000000000;
 }
 
-/* line 47, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 57, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .cross {
   background: none;
   position: absolute;
@@ -16031,7 +16049,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   z-index: 10000000000000;
 }
 
-/* line 66, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 76, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .menu {
   z-index: 1000000;
   font-family: CODE;
@@ -16045,7 +16063,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   top: 0px;
 }
 
-/* line 67, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 77, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .menu ul {
   margin-top: 80%;
   padding: 0;
@@ -16053,14 +16071,14 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   list-style-image: none;
 }
 
-/* line 68, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 78, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .menu li {
   display: block;
   padding: 15px 0 30px 0;
   border-bottom: #1d1f20 1px solid;
 }
 
-/* line 69, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 79, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .menu li:hover {
   display: block;
   background: #AAC0BB;
@@ -16068,33 +16086,33 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   border-bottom: #1d1f20 1px solid;
 }
 
-/* line 70, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 80, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .menu ul li a {
   text-decoration: none;
   margin: 0px;
   color: #fff;
 }
 
-/* line 71, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 81, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .menu ul li a:hover {
   color: #fff;
   text-decoration: none;
   padding: 45px 0 45px 0;
 }
 
-/* line 72, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 82, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .menu a {
   text-decoration: none;
   color: white;
 }
 
-/* line 73, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 83, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .menu a:hover {
   text-decoration: none;
   color: white;
 }
 
-/* line 75, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 85, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .glyphicon-home {
   color: white;
   font-size: 1.5em;
@@ -16102,31 +16120,50 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin: 0 auto;
 }
 
-/* line 82, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 92, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 #icons {
   background: none;
   z-index: 10000000000000000000000;
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: 100px;
   right: 50px;
   text-align: right;
   height: 50px;
   width: 50px;
 }
 
-/* line 94, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 104, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+#logo {
+  background: none;
+  z-index: 10000000000000000000000;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 75px;
+  text-align: right;
+  height: 50px;
+  width: 50px;
+}
+
+/* line 116, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 #icons img {
   height: 50px;
   width: 50px;
 }
 
-/* line 99, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 121, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+#logo img {
+  height: 100px;
+  width: 100px;
+}
+
+/* line 126, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 #title {
   margin-left: 3%;
 }
 
-/* line 104, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
+/* line 131, /Users/Carmer/Documents/personal_projects/house_of_luthiery/app/assets/stylesheets/application.css.scss */
 .content {
   background-color: black;
   vertical-align: center;
