@@ -19,7 +19,7 @@
             <% end %>
           </ul>
         </div>
-        <% if @instrument.custom %>
+        <% unless @instrument.custom %>
         <div class="col s6 offset-s6">
           <ul>
             <h4>Options:</h4>
