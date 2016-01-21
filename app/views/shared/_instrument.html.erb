@@ -1,34 +1,32 @@
-<div id="instrument-show">
-  <div class="container">
+<div class="instrument-show">
     <div class="row">
-        <h3 class="col s12"><p><%= link_to "#{@instrument.name}", instrument_path(slug: @instrument.slug), class: "white-text" %></p></h3>
+      <h3>
+        <div class="center-align">
+          <%= link_to "#{@instrument.name}", instrument_path(slug: @instrument.slug), class: "white-text" %>
+        </div>
+       </h3>
+    </div>
 
-      <div class="col s6">
-        <a href="/instruments/<%= @instrument.slug %>"><%= image_tag @instrument.image.url(:large) %></a>
-        <div class="instrument-thumbs">
-          <% @instrument.photos.each do |photo| %>
-            <%= image_tag photo.image.url(:thumb) %>
-          <% end %>
+    <div class="row">
+      <div class="col s12">
+        <div class="center-align">
+          <a href="/instruments/<%= @instrument.slug %>"><%= image_tag @instrument.image.url(:large) %></a>
+          <div class="instrument-thumbs">
+                <% @instrument.photos.each do |photo| %>
+                  <%= image_tag photo.image.url(:thumb) %>
+                <% end %>
+          </div>
         </div>
       </div>
-        <div class="col s6">
-          <ul>
-            <h4><p>Specifications:</p></h4>
-            <% @instrument.specs.each do |spec| %>
-              <li><p>- <%= spec.description %></p></li>
-            <% end %>
-          </ul>
-        </div>
-        <% unless @instrument.custom %>
-        <div class="col s6 offset-s6">
-          <ul>
-            <h4>Options:</h4>
-            <% @instrument.options.each do |option| %>
-              <li><p>- <%= option.description %></p></li>
-            <% end %>
-          </ul>
-        </div>
-        <% end %>
     </div>
-  </div>
+
+    <div class="row">
+      <div class="col s12">
+        <ol class="spec_list">
+          <% @instrument.specs.each do |spec| %>
+            <li><%= spec.description %></li>
+          <% end %>
+        </ol>
+      </div>
+    </div>
 </div>

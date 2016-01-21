@@ -1,19 +1,14 @@
-#instruments h1 {
-  border-bottom: solid white;
+.instruments h1 {
+  text-decoration: underline;
 }
 
-#instruments h3 {
-  margin-top: 10%;
-}
-
-#instruments h2 {
-  border-bottom: solid white;
+.instruments h4 {
+  text-decoration: underline;
 }
 
 .admin-buttons {
   width: 450px;
 }
-
 
 body {
   display: flex;
@@ -27,20 +22,6 @@ body {
 
 main {
   flex: 1 0 auto;
-}
-
-h1 {
-  font-family: CODE;
-  font-size: 80px !important;
-  text-align: center;
-  color: white;
-}
-
-h3 {
-  font-family: CODE;
-  // font-size: 12px !important;
-  text-align: center;
-  color: white;
 }
 
 .switch {

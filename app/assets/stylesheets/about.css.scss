@@ -3,7 +3,7 @@
   padding:0;
   margin-top: 5%;
 
-  top:70;
+  top:0;
   left:0;
 
   width: 100%;
@@ -16,4 +16,8 @@
   -o-background-size: cover;
   background-size: cover;
   z-index: -5;
+}
+
+.about_text {
+  padding: 10px;
 }
