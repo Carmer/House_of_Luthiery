@@ -26,6 +26,9 @@ $primary-color: color("white", "lighten-2") !default;
 
 p {
   font-family: SANS;
+  font-size: 18px;
+  line-height: 25px;
+  word-spacing: 4px;
 }
 
 
@@ -134,4 +137,19 @@ p {
   margin: 5%;
   padding: 25px;
   border-radius: 3px;
+}
+
+
+.text {
+  // position: absolute;
+  background-color: black;
+  margin-top: 45%;
+  // padding-top: 45px;
+}
+
+.title_text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
