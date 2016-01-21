@@ -10,7 +10,6 @@ class Admin::InstrumentsController < AdminController
 
   def update
     @instrument = Instrument.find_by(slug: params[:slug])
-
     if @instrument.update_attributes(instrument_params)
       @instrument.specs.destroy_all
       @instrument.options.destroy_all
