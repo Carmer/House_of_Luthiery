@@ -1,10 +1,11 @@
 <div class="instrument-show">
     <div class="row">
-      <h3>
         <div class="center-align">
-          <%= link_to "#{@instrument.name}", instrument_path(slug: @instrument.slug), class: "white-text" %>
-        </div>
-       </h3>
+          <h3>
+            <%= link_to "#{@instrument.name}", instrument_path(slug: @instrument.slug), class: "white-text" %>
+          </h3>
+         <h4><%= @instrument.style %></h4>
+       </div>
     </div>
 
     <div class="row">

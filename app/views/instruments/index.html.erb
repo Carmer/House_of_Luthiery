@@ -7,11 +7,12 @@
 
     <% @signature_models.each do |model| %>
     <div class="row">
-      <h3>
-        <div class="center-align">
+      <div class="center-align">
+        <h3>
           <%= link_to "#{model.name}", instrument_path(slug: model.slug), class: "white-text" %>
-        </div>
-      </h3>
+        </h3>
+        <h4><%= model.style %></h4>
+      </div>
     </div>
       <div class="row">
         <div class="col s12">
@@ -30,11 +31,12 @@
       <h1><div class="center-align">Custom Builds</div></h1>
       <% @custom_models.each do |model| %>
       <div class="row">
-        <h3>
-          <div class="center-align">
+        <div class="center-align">
+          <h3>
             <%= link_to "#{model.name}", instrument_path(slug: model.slug), class: "white-text" %>
-          </div>
          </h3>
+         <h4><%= model.style %></h4>
+        </div>
       </div>
       <div class="row">
         <div class="col s12">

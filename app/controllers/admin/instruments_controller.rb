@@ -36,6 +36,6 @@ class Admin::InstrumentsController < AdminController
   private
 
   def instrument_params
-    params.require(:instrument).permit(:id, :name, :slug, :custom, :image)
+    params.require(:instrument).permit(:id, :name, :style, :slug, :custom, :image)
   end
 end
