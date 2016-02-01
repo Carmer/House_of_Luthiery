@@ -12,9 +12,9 @@
         <div class="center-align">
           <a href="/instruments/<%= @instrument.slug %>"><%= image_tag @instrument.image.url(:large) %></a>
           <div class="instrument-thumbs">
-                <% @instrument.photos.each do |photo| %>
-                  <%= image_tag photo.image.url(:thumb) %>
-                <% end %>
+            <% @instrument.photos.each do |photo| %>
+              <%= image_tag photo.image.url(:thumb) %>
+            <% end %>
           </div>
         </div>
       </div>

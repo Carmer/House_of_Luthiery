@@ -6,20 +6,48 @@
   <div class="row">
 
     <% @signature_models.each do |model| %>
-      <% @instrument = model %>
-      <div class="col s6">
-        <%= render "shared/instrument", {locals: @instrument} %>
+    <div class="row">
+      <h3>
+        <div class="center-align">
+          <%= link_to "#{model.name}", instrument_path(slug: model.slug), class: "white-text" %>
+        </div>
+      </h3>
+    </div>
+      <div class="row">
+        <div class="col s12">
+          <div class="center-align">
+            <a href="/instruments/<%= model.slug %>"><%= image_tag model.image.url(:large) %></a>
+            <div class="instrument-thumbs">
+              <% model.photos.each do |photo| %>
+                <a href="/instruments/<%= model.slug %>"><%= image_tag photo.image.url(:thumb) %></a>
+              <% end %>
+            </div>
+          </div>
+        </div>
       </div>
     <% end %>
   </div>
-    <div class="row">
       <h1><div class="center-align">Custom Builds</div></h1>
       <% @custom_models.each do |model| %>
-        <% @instrument = model %>
-          <div class="col s6">
-            <%= render "shared/instrument", {locals: @instrument} %>
+      <div class="row">
+        <h3>
+          <div class="center-align">
+            <%= link_to "#{model.name}", instrument_path(slug: model.slug), class: "white-text" %>
           </div>
+         </h3>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <div class="center-align">
+            <a href="/instruments/<%= model.slug %>"><%= image_tag model.image.url(:large) %></a>
+            <div class="instrument-thumbs">
+              <% model.photos.each do |photo| %>
+                <a href="/instruments/<%= model.slug %>"><%= image_tag photo.image.url(:thumb) %></a>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
       <% end %>
-    </div>
   </div>
 </div>
