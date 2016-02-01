@@ -5,6 +5,7 @@ class ContactEmailer < ActionMailer::Base
   def send_signup_email(contact_info)
     @contact_info = contact_info
     mail( :to => "info@houseofluthiery.com",
+    :from => contact_info[:email_address],
     :subject => "@contact_info[:subject]" )
   end
 end
