@@ -40,6 +40,8 @@ $(document).ready(function(){
     e.preventDefault();
 
     $(".signature-model").removeClass("hidden");
+    $("#signature-model-button").addClass("blueish");
+    $("#custom-model-button").removeClass("blueish");
     $(".custom-model").addClass("hidden");
     // $(".carousel").addClass("hidden");
   });
@@ -48,6 +50,8 @@ $(document).ready(function(){
     e.preventDefault();
 
     $(".custom-model").removeClass("hidden");
+    $("#custom-model-button").addClass("blueish");
+    $("#signature-model-button").removeClass("blueish");
     $(".signature-model").addClass("hidden");
     // $(".carousel").addClass("hidden");
   });
