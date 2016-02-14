@@ -6,6 +6,6 @@ class ContactEmailer < ActionMailer::Base
     @contact_info = contact_info
     mail( :to => "info@houseofluthiery.com",
     :from => contact_info[:email_address],
-    :subject => "@contact_info[:subject]" )
+    :subject => "Website Contact: #{contact_info[:reason_to_contact]}")
   end
 end

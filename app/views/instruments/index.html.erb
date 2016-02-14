@@ -13,14 +13,14 @@
   <div class="row">
 
     <% @signature_models.each do |model| %>
-    <div class="row">
+    <div class="inst-card">
+
       <div class="center-align">
         <h3>
           <%= link_to "#{model.name}", instrument_path(slug: model.slug), class: "white-text" %>
         </h3>
         <h4><%= model.style %></h4>
       </div>
-    </div>
       <div class="row">
         <div class="col s12">
           <div class="center-align">
@@ -33,6 +33,7 @@
           </div>
         </div>
       </div>
+    </div>
     <% end %>
   </div>
 </div>
@@ -45,14 +46,15 @@
         </div>
       </div>
       <% @custom_models.each do |model| %>
-      <div class="row">
+      <div class="inst-card">
+
         <div class="center-align">
           <h3>
             <%= link_to "#{model.name}", instrument_path(slug: model.slug), class: "white-text" %>
          </h3>
          <h4><%= model.style %></h4>
         </div>
-      </div>
+
       <div class="row">
         <div class="col s12">
           <div class="center-align">
@@ -65,6 +67,7 @@
           </div>
         </div>
       </div>
+    </div>
       <% end %>
     </div>
 
