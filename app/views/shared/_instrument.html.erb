@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col s6">
         <div class="center-align">
-          <a href="/instruments/<%= @instrument.slug %>"><%= image_tag @instrument.image.url(:large) %></a>
+          <a href="/instruments/<%= @instrument.slug %>"><%= image_tag @instrument.image.url(:large), class: "instrument-main-display"  %></a>
           <div class="instrument-thumbs">
             <% @instrument.photos.each do |photo| %>
               <%= image_tag photo.image.url(:thumb) %>

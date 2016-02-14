@@ -28,7 +28,9 @@
   width: 25%;
 }
 
-.about-us-content {
+.row.about-us-content {
   margin-top: 40%;
-  box-shadow: 0 0 1px white;
+  margin-bottom: 15%;
+  box-shadow: 2px 2px 1px grey;
+  border: 1px solid grey;
 }

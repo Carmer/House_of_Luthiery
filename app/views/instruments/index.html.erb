@@ -7,24 +7,28 @@
 
 <div class="signature-model hidden">
 
+  <h1><div class="center-align">Signature Models</div></h1>
   <div class="row">
-    <h1><div class="center-align">Signature Models</div></h1>
+    <div class="col s12">
+      <p class="custom-info col s12">Our standard models are designed with acoustical purpose, as form follows function. Utilizing and enhancing the material and acoustical properties of the woods we use, we are able to achieve an ideal balance between structure and resonance in our instruments.</p>
+    </div>
   </div>
   <div class="row">
 
     <% @signature_models.each do |model| %>
     <div class="inst-card">
 
-      <div class="center-align">
-        <h3>
-          <%= link_to "#{model.name}", instrument_path(slug: model.slug), class: "white-text" %>
-        </h3>
-        <h4><%= model.style %></h4>
+      <div class="center-align instrument-show-header">
+
       </div>
       <div class="row">
         <div class="col s12">
-          <div class="center-align">
-            <a href="/instruments/<%= model.slug %>"><%= image_tag model.image.url(:large) %></a>
+          <div class="center-align instrument-show">
+            <h3>
+              <%= link_to "#{model.name}", instrument_path(slug: model.slug), class: "white-text" %>
+            </h3>
+            <h4><%= model.style %></h4>
+            <a href="/instruments/<%= model.slug %>"><%= image_tag model.image.url(:large)%></a>
             <div class="instrument-thumbs">
               <% model.photos.each do |photo| %>
                 <a href="/instruments/<%= model.slug %>"><%= image_tag photo.image.url(:thumb) %></a>
@@ -42,23 +46,19 @@
       <h1><div class="center-align">Custom Builds</div></h1>
       <div class="row">
         <div class="col s12">
-          <p class="custom-info col s12">We love building guitars the way we see fit but we equally love a challenge. Understanding to great depth the fundamentals of guitar design opens up the possibilities to work with a client to design a custom instrument. When designing an instrument the sky is the limit for custom options. From pickup layout to tone woods and every detail inbetween, we have made several instruments in this fashion.</p>
+          <p class="custom-info col s12">In addition to our standard models, we also collaborate with musicians to design and create their ideal instrument. With our comprehensive understanding of the funadmentals of fretted instrument design, the sky is the limit for creating unique, one-of-a-kind guitars.</p>
         </div>
       </div>
       <% @custom_models.each do |model| %>
       <div class="inst-card">
-
-        <div class="center-align">
-          <h3>
-            <%= link_to "#{model.name}", instrument_path(slug: model.slug), class: "white-text" %>
-         </h3>
-         <h4><%= model.style %></h4>
-        </div>
-
       <div class="row">
         <div class="col s12">
-          <div class="center-align">
-            <a href="/instruments/<%= model.slug %>"><%= image_tag model.image.url(:large) %></a>
+          <div class="center-align instrumnet-show">
+            <h3>
+              <%= link_to "#{model.name}", instrument_path(slug: model.slug), class: "white-text" %>
+           </h3>
+           <h4><%= model.style %></h4>
+            <a href="/instruments/<%= model.slug %>"><%= image_tag model.image.url(:large)%></a>
             <div class="instrument-thumbs">
               <% model.photos.each do |photo| %>
                 <a href="/instruments/<%= model.slug %>"><%= image_tag photo.image.url(:thumb) %></a>
@@ -73,7 +73,6 @@
 
 
     <div class="carousel">
-      <a class="carousel-item" href="#one!"><%= image_tag "signatures.jpg" %></a>
       <a class="carousel-item" href="#two!"><%= image_tag "ariar.jpg" %></a>
       <a class="carousel-item" href="#three!"><%= image_tag "midcoast.jpg" %></a>
       <a class="carousel-item" href="#four!"><%= image_tag "ariar-custom.jpg" %></a>

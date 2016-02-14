@@ -20,15 +20,15 @@ $primary-color: color("white", "lighten-2") !default;
 
 @font-face {
   font-family: 'SANS';
-  src: url('Arctik 1.ttf') format("truetype");
+  src: url('Drugs.otf') format("truetype");
   color: white !important;
 }
 
 p {
   font-family: SANS;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 25px;
-  word-spacing: 4px;
+  word-spacing: 3px;
 }
 
 body {
@@ -36,8 +36,8 @@ body {
 }
 
 .spec_list {
-  font-family: SANS;
-  font-size: 18px;
+  font-family: CODE;
+  font-size: 12px;
   line-height: 30px;
   word-spacing: 3px;
 }
@@ -94,10 +94,12 @@ h1  {
   z-index:10000000000000;
 }
 
+// 85dbbb - good - maybe a little darker / greyer
+
 .menu{z-index:1000000; font-family: CODE; font-weight:bold; font-size: 20px; width: 12%; height: 100%; background: black;  position:absolute; text-align:center; top: 0px}
 .menu ul {margin-top: 80%; padding: 0; list-style-type: none; list-style-image: none;}
-.menu li {display: block;   padding: 15px 0 30px 0;; border-bottom:#1d1f20 1px solid;}
-.menu li:hover{display: block;    background: #AAC0BB ; padding: 45px 0 45px 0; border-bottom:#1d1f20 1px solid;}
+.menu li {display: block;   padding: 15px 0 30px 0;; border-bottom:#1d1f20 1px double;}
+.menu li:hover{display: block;    background: #84ceb4 ; font-weight:bold; font-size: 25px; padding: 45px 0 45px 0; border-bottom:#1d1f20 7px double;}
 .menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
 .menu ul li a:hover {  color: #fff; text-decoration:none; padding: 45px 0 45px 0;}
 .menu a{text-decoration:none; color:white;}

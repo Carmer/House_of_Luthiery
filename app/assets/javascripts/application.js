@@ -21,7 +21,6 @@ $(document).ready(function(){
   $( ".cross" ).hide();
     $( ".menu" ).hide();
     $( ".hamburger" ).click(function() {
-      console.log("click burger");
       $( ".menu" ).toggle( "slow", function() {
       $( ".hamburger" ).hide();
       $( ".cross" ).show();
@@ -29,7 +28,6 @@ $(document).ready(function(){
   });
 
   $( ".cross" ).click(function() {
-    console.log("click cross");
   $( ".menu" ).toggle( "slow", function() {
   $( ".cross" ).hide();
   $( ".hamburger" ).show();
@@ -40,22 +38,22 @@ $(document).ready(function(){
     e.preventDefault();
 
     $(".signature-model").removeClass("hidden");
-    $("#signature-model-button").addClass("blueish");
-    $("#custom-model-button").removeClass("blueish");
+    $("#signature-model-button").addClass("selected");
+    $("#custom-model-button").removeClass("selected");
     $(".custom-model").addClass("hidden");
-    // $(".carousel").addClass("hidden");
   });
 
   $("#custom-model-button").on("click", function(e){
     e.preventDefault();
 
     $(".custom-model").removeClass("hidden");
-    $("#custom-model-button").addClass("blueish");
-    $("#signature-model-button").removeClass("blueish");
+    $("#custom-model-button").addClass("selected");
+    $("#signature-model-button").removeClass("selected");
     $(".signature-model").addClass("hidden");
-    // $(".carousel").addClass("hidden");
   });
 
 
   $(".carousel").carousel();
+  
+  pictureFlipper();
 });
