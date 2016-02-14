@@ -1,15 +1,15 @@
 <div class="instrument-show">
     <div class="row">
         <div class="center-align">
-          <h3>
+          <h1>
             <%= link_to "#{@instrument.name}", instrument_path(slug: @instrument.slug), class: "white-text" %>
-          </h3>
-         <h5><%= @instrument.style %></h5>
+          </h1>
+         <h3><%= @instrument.style %></h3>
        </div>
     </div>
 
     <div class="row">
-      <div class="col s12">
+      <div class="col s6">
         <div class="center-align">
           <a href="/instruments/<%= @instrument.slug %>"><%= image_tag @instrument.image.url(:large) %></a>
           <div class="instrument-thumbs">
@@ -19,11 +19,9 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col s12">
-        <ol class="spec_list col s4 offset-s4">
+      <div class="col 6">
+        <ol class="spec_list">
           <% @instrument.specs.each do |spec| %>
             <li><%= spec.description %></li>
           <% end %>

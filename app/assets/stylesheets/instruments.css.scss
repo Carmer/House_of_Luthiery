@@ -1,5 +1,10 @@
+
 .instruments h1 {
-  text-decoration: underline;
+  // text-decoration: underline;
+}
+
+.instrument-show {
+  margin-bottom: 400px;
 }
 
 .instruments h4 {
@@ -8,6 +13,15 @@
 
 .admin-buttons {
   width: 450px;
+}
+
+.custom-info {
+  margin-bottom: 10%;
+}
+
+p.custom-info.col.s12 {
+    padding: 10px;
+    box-shadow: 0 0 5px grey;
 }
 
 body {
@@ -26,4 +40,31 @@ main {
 
 .switch {
   font-size: 35px;
+}
+
+
+ol  {
+  list-style: none;
+}
+
+.showroom-buttons {
+  border: 2px solid white;
+  padding: 5px;
+}
+
+
+.carousel {
+  box-shadow: 0 0 1px white;
+}
+
+.showroom-buttons:hover {
+  background-color: #AAC0BB;
+}
+
+.signature-model {
+  margin: 10%;
+}
+
+.custom-models {
+  margin: 10%;
 }

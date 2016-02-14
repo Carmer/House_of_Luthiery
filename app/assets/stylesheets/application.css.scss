@@ -31,10 +31,14 @@ p {
   word-spacing: 4px;
 }
 
+body {
+  color: white;
+}
+
 .spec_list {
   font-family: SANS;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 30px;
   word-spacing: 3px;
 }
 
@@ -154,22 +158,26 @@ h1  {
   border-radius: 3px;
 }
 
+.carousel-slider {
+  z-index: 5000;
+}
+
 
 .text {
   // position: absolute;
   background-color: black;
-  margin-top: 35%;
+  // margin-top: 35%;
   // padding-top: 45px;
 }
 
 .title_text {
   position: absolute;
-  top: 25%;
+  top: 7%;
   right: 0;
   left: 0;
   text-align: center;
 }
 
-ol  {
-  list-style-type: initial;
+.hidden {
+  display: none;
 }

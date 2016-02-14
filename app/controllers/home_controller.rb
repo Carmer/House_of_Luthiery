@@ -17,6 +17,7 @@ class HomeController < ApplicationController
   end
 
   def contact_email
+    binding.pry
     ContactEmailer.send_signup_email(params).deliver_now
     flash.now[:success] = "Your email was sent"
     render :home

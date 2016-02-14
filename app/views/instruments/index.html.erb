@@ -1,5 +1,14 @@
 <div class="instruments">
-  <div class="container">
+
+
+  <div class="container-fluid">
+    <h3 class="center-align">
+      <a href="#" class="showroom-buttons white-text" id="signature-model-button">Signature Models</a>
+      <a href="#" class="showroom-buttons white-text" id="custom-model-button">Custom Models</a>
+    </h3>
+
+<div class="signature-model hidden">
+
   <div class="row">
     <h1><div class="center-align">Signature Models</div></h1>
   </div>
@@ -28,7 +37,15 @@
       </div>
     <% end %>
   </div>
+</div>
+
+<div class="custom-model hidden">
       <h1><div class="center-align">Custom Builds</div></h1>
+      <div class="row">
+        <div class="col s12">
+          <p class="custom-info col s12">We love building guitars the way we see fit but we equally love a challenge. Understanding to great depth the fundamentals of guitar design opens up the possibilities to work with a client to design a custom instrument. When designing an instrument the sky is the limit for custom options. From pickup layout to tone woods and every detail inbetween, we have made several instruments in this fashion.</p>
+        </div>
+      </div>
       <% @custom_models.each do |model| %>
       <div class="row">
         <div class="center-align">
@@ -51,5 +68,15 @@
         </div>
       </div>
       <% end %>
+    </div>
+
+
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"><%= image_tag "signatures.jpg" %></a>
+      <a class="carousel-item" href="#two!"><%= image_tag "ariar.jpg" %></a>
+      <a class="carousel-item" href="#three!"><%= image_tag "midcoast.jpg" %></a>
+      <a class="carousel-item" href="#four!"><%= image_tag "ariar-custom.jpg" %></a>
+      <a class="carousel-item" href="#five!"><%= image_tag "croonn.jpg" %></a>
+    </div>
   </div>
 </div>

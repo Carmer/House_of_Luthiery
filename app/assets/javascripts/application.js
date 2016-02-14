@@ -36,5 +36,22 @@ $(document).ready(function(){
   });
   });
 
-  console.log("loaded")
+  $("#signature-model-button").on("click", function(e){
+    e.preventDefault();
+
+    $(".signature-model").removeClass("hidden");
+    $(".custom-model").addClass("hidden");
+    // $(".carousel").addClass("hidden");
+  });
+
+  $("#custom-model-button").on("click", function(e){
+    e.preventDefault();
+
+    $(".custom-model").removeClass("hidden");
+    $(".signature-model").addClass("hidden");
+    // $(".carousel").addClass("hidden");
+  });
+
+
+  $(".carousel").carousel();
 });

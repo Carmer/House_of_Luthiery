@@ -8,16 +8,16 @@
       <form class="col s12" action="/contact-email" method= "post">
         <div class="row">
           <div class="col s6">
-            <input id="first_name" type="text" name="first_name">
+            <input id="first_name" type="text" name="first_name" class=" form-fonts">
             <label for="first_name" class="white-text code-font-form">First Name</label>
           </div>
           <div class="col s6">
-            <input id="last_name" type="text" name="last_name">
+            <input id="last_name" type="text" name="last_name" class=" form-fonts">
             <label for="last_name" class="white-text code-font-form">Last Name</label>
           </div>
           <div class="row">
             <div class="col s8">
-              <input id="email" type="email" name="email_address">
+              <input id="email" type="email" name="email_address" class=" form-fonts">
               <label for="email" class="white-text code-font-form">Email</label>
             </div>
           </div>
@@ -27,14 +27,15 @@
               <option value="" disabled selected class="white-text code-font-form">What's This About?</option>
               <option value="1">Purchasing</option>
               <option value="2">Custom Build</option>
-              <option value="3">General Stuff</option>
-              <option value="4">Other</option>
+              <option value="3">Repair Work</option>
+              <option value="4">General Stuff</option>
+              <option value="5">Other</option>
             </select>
           </div>
         <div class="row">
           <div class="row">
             <div class="input-field col s11">
-              <textarea id="textarea1" class="materialize-textarea" class="white-text code-font-form" name="message" length="1000"></textarea>
+              <textarea id="textarea1" class="materialize-textarea white-text form-fonts" name="message" length="1000"></textarea>
               <label for="textarea1" class="white-text code-font-form">What's Up?</label>
             </div>
             <button class="btn waves-effect waves-light black" id="contact-form-submit" type="submit" >Send</button>
