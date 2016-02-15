@@ -23,7 +23,7 @@
   top:70;
   right:0;
   width: 100%;
-  height: 75%;
+  height: 55%;
   background-image: url("home.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -36,9 +36,15 @@
 
 .carousel-home {
   border:none;
-  right:20%;
-  bottom: 5%;
+  margin-top: 5%;
+  bottom: 10%;
+  right:15%;
   box-shadow: none !important;
+}
+
+.carousel-home .carousel-item {
+    width: 30% !important;
+    position: absolute;
 }
 
 #footer_list li {
