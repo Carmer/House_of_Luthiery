@@ -196,4 +196,56 @@ h1  {
   }
 
 
-	}
+
+  .hamburger {
+    background: none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top:0;
+    left:0;
+    line-height:45px;
+    padding:0px 15px 0px 15px;
+    background-color: black !important;
+    color:#fff;
+    border:0;
+    border-radius: 3px;
+    font-size:3.4em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+
+  .cross {
+    background: none;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    top:0;
+    left:0;
+    padding:0px 15px 0px 15px;
+    background-color: black !important;
+    color:#fff;
+    border:0;
+    border-radius: 3px;
+    font-size:6em;
+    line-height:65px;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+
+
+  .menu{z-index:1000000; font-family: CODE; font-weight:bold; font-size: 50px; width: 35%; height: 100%; background: black;  position:absolute; text-align:center; top: 0px}
+  .menu ul {margin-top: 80%; padding: 0; list-style-type: none; list-style-image: none;}
+  .menu li {display: block;   padding: 15px 15px 100px 0; border-bottom:#1d1f20 1px double;}
+  .menu li:hover{display: block;    background: #84ceb4 ; font-weight:bold; font-size: 25px; padding: 45px 0 45px 0; border-bottom:#1d1f20 7px double;}
+  .menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+  .menu ul li a:hover {  color: #fff; text-decoration:none; padding: 45px 0 45px 0;}
+  .menu a{text-decoration:none; color:white;}
+  .menu a:hover{text-decoration:none; color:white;}
+
+
+}

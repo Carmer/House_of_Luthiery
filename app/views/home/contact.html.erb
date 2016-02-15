@@ -1,23 +1,16 @@
 <div id="contact">
   <div class="container">
     <div class="row contact-info">
-    <ul class="center-align">
-      <li><h5>Email : info@houseofluthiery.com</h5></li>
-      <li><h5>Phone : ( 574 ) 339-0554</h5></li>
-      <li>
-        <p class="icons">
-          <a href="https://www.facebook.com/houseofluthiery" class="white-text"><%= image_tag "facebook.png" %> Facebook</a>
-        </p>
-        <p class="icons">
-          <a href="https://www.instagram.com/naniahouseofluthiery/" class="white-text"><%= image_tag "instagram.png" %>Instagram</a>
-        </p>
-      </li>
-      <li>
+    <div class="center-align contact-headers">
+      <h4>Email : info@houseofluthiery.com</h4>
+      <h4>Phone : ( 574 ) 339-0554</h4>
+      <div class="icons">
+        <a href="https://www.facebook.com/houseofluthiery" class="white-text"><%= image_tag "facebook.png" %> Facebook</a>
+        <a href="https://www.instagram.com/naniahouseofluthiery/" class="white-text"><%= image_tag "instagram.png" %>Instagram</a>
+      </div>
         <p>
           <%= link_to "Drop us a line", contact_us_path, class: "btn-large white black-text center-align", id: "contact-button" %>
         </p>
-      </li>
-    </ul>
   </div>
 </div>
 </div>

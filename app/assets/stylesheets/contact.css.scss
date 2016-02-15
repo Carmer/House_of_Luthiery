@@ -42,9 +42,31 @@
 }
 
 #contact-button {
+  font-family: CODE;
   font-size: 18px !important;
 }
 
 .form-fonts {
   font-family: SANS;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+
+  #contact-button {
+    height: 100px;
+    width: 400px;
+    font-size: 35px !important;
+    line-height: 100px;
+  }
+
+  .contact-headers h4{
+    font-size: 50px !important;
+  }
+
+  .contact-headers {
+    margin-top: 75%;
+    font-size: 50px;
+  }
+
 }
