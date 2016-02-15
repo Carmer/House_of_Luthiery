@@ -39,3 +39,14 @@
 .pdf-image {
   height: 35px;
 }
+
+
+@media only screen and (max-device-width: 480px) {
+
+  .research-paragraph {
+    padding: 20px;
+    margin-top: 35%;
+    box-shadow: 0 0 5px grey;
+  }
+
+}
