@@ -78,19 +78,7 @@ header{
 	line-height:50px;
 }
 
-.home-buttons {
-  font-family: CODE;
-}
 
-.home-buttons button {
-  min-width: 100px;
-}
-
-.home-buttons.col.s6.offset-s3.center-align {
-    display: inline-block;
-    margin-left: 35%;
-    margin-top: 20%;
-}
 
 .top_title_text {
   position: absolute;
@@ -98,4 +86,35 @@ header{
   right: 0;
   left: 0;
   text-align: center;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+
+
+  #home {
+    position: absolute;
+    padding:0;
+
+    top:70;
+    right:0;
+    width: 100%;
+    height: 75%;
+    background-image: url("home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -4;
+  }
+
+  .carousel-home {
+    margin-top: 14%;
+    margin-left: 7%;
+  }
+
+
+
 }
