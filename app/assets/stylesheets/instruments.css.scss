@@ -79,3 +79,17 @@ ol  {
 .inst-card {
   margin: 50px;
 }
+
+
+@media only screen and (max-device-width: 480px) {
+
+  .carousel-home .carousel-item {
+      width: 30% !important;
+      position: absolute;
+  }
+
+  .inst-carousel {
+      margin-top: 50%;
+  }
+
+}
