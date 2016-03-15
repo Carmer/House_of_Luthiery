@@ -41,6 +41,9 @@ $(document).ready(function(){
     $("#signature-model-button").addClass("selected");
     $("#custom-model-button").removeClass("selected");
     $(".custom-model").addClass("hidden");
+
+    pictureFilpper();
+
   });
 
   $("#custom-model-button").on("click", function(e){
@@ -54,6 +57,6 @@ $(document).ready(function(){
 
 
   $(".carousel").carousel();
-  
+
   pictureFlipper();
 });

@@ -1,0 +1,12 @@
+
+.konami {
+  position: absolute;
+  bottom: -50px;
+  right: 2000px;
+  animation: cart 10s ease;
+}
+
+@keyframes cart {
+  from { right: 25px; width: 10%;}
+  to { right: 2000px; width: 55%;}
+}
