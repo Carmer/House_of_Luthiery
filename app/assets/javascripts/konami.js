@@ -7,7 +7,7 @@ $(document).ready(function (){
 
   function doTheThing(){
 
-    $('.page_footer').append("<img src='/assets/cart.jpg' class='konami'>");
+    $('.page_footer').append("<img src='https://s3-us-west-2.amazonaws.com/house-of-luthiery/cart.jpg' class='konami'>");
 
     setTimeout( function(){  $('.konami' ).remove() }, 4000);
 
