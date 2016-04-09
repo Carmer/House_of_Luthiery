@@ -43,7 +43,7 @@ $(document).ready(function(){
     $(".custom-model").addClass("hidden");
 
     pictureFilpper();
-
+    
   });
 
   $("#custom-model-button").on("click", function(e){
