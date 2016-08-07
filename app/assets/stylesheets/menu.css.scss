@@ -1,0 +1,49 @@
+$hovercolor: #84ceb4;
+
+.fixLogo {
+    position: relative;
+    top:0;
+    right: 45%;
+    z-index:100;
+
+}
+
+#menu_index {
+    display: table;
+    width: 100%;
+
+    a {
+    font-size: 21px;
+    color: black;
+    text-transform: uppercase;
+    }
+
+    img{
+      height: 100px;
+      width: 100px;
+    }
+}
+
+#menu_index li:hover {
+  transition: background-color 0.5s cubic-bezier(0.25, 0.46, 0.03, 1);
+  transition: color 0.5s cubic-bezier(0.25, 0.46, 0.03, 1);
+  transition: font-size 0.5s cubic-bezier(0.25, 0.46, 0.03, 1);
+
+  a {
+    color: $hovercolor;
+  }
+  box-shadow: 2px 2px 1px grey;
+  border-radius: 6px 6px 6px 6px;
+}
+
+#menu_index li:nth-child(4) {
+  background-color: white;
+  box-shadow: none;
+  height: 10px;
+}
+
+#menu_index li:nth-child(n+5):hover {
+  background-color: white;
+  box-shadow: 2px 2px 1px grey;
+  height: 10px;
+}

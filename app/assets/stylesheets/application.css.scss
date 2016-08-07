@@ -15,14 +15,26 @@
  */
 
 @import "materialize/components/color";
-$primary-color: color("white", "lighten-2") !default;
+$primary-color: color("black", "lighten-2") !default;
 @import 'materialize';
 
 @font-face {
   font-family: 'SANS';
   src: url('Drugs.otf') format("truetype");
-  color: white !important;
+  color: black !important;
 }
+
+
+
+
+#menu_index li {
+    display: table-cell;
+    height: 55px;
+    width: 14.285714286%;  /* (100 / numItems)% */
+    line-height: 55px;
+    text-align: center;
+    white-space: nowrap;
+}​
 
 p {
   font-family: SANS;
@@ -32,6 +44,19 @@ p {
 }
 
 body {
+  display: flex;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  flex-direction: column;
+  background-color: white;
+  font: 300 15px/1.4 "roboto",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: roboto, Helvetica, Arial, sans-serif;
   color: white;
 }
 
@@ -57,6 +82,7 @@ h1  {
 }
 
 .hamburger {
+  display: none;
   background: none;
   position:absolute;
   width: 55px;
@@ -64,7 +90,7 @@ h1  {
   left:0;
   line-height:45px;
   padding:0px 15px 0px 15px;
-  background-color: black !important;
+  background-color: white !important;
   color:#fff;
   border:0;
   border-radius: 3px;
@@ -82,7 +108,7 @@ h1  {
   top:0;
   left:0;
   padding:0px 15px 0px 15px;
-  background-color: black !important;
+  background-color: white !important;
   color:#fff;
   border:0;
   border-radius: 3px;
@@ -129,24 +155,6 @@ h1  {
   width: 50px;
 }
 
-#logo {
-  background: none;
-  z-index: 10000000000000000000000;
-  display: inline-block;
-  position: absolute;
-  top: 20;
-  right: 70px;
-  text-align: right;
-  height: 50px;
-  width: 50px;
-}
-
-
-#logo img {
-  height: 100px;
-  width: 100px;
-}
-
 #title {
   margin-left: 3%;
 }
@@ -185,6 +193,15 @@ h1  {
 }
 
 @media only screen and (max-device-width: 480px) {
+
+  .hamburger {
+    display: unset;
+  }
+
+  #menu_index{
+    // display: none;
+    height: 95vh;
+  }
 
   .title_text {
 

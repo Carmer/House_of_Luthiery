@@ -11,11 +11,24 @@
 
 </head>
 <body>
-  <p id="logo">
-    <a href="/"><%= image_tag "A5.png"%></a>
-  </p>
 
-    <%= render "shared/header" %>
+  <ul id="menu_index">
+    <li><a href="/">Home</a></li>
+    <li><a href="/instruments">Instruments</a></li>
+    <li><a href="/research">Research</a></li>
+    <li><a href="/"><a class="logo" href="/"><%= image_tag "A5.png"%></a></a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/contact">Music</a></li>
+  </ul>
+
+  <%= render "shared/header" %>
+<div class="mission_statement">
+  <h5 class="col-sm-8 offset-sm-2 mission_statement">Combining the art of fine woodworking and acoustical physics to create</h5>
+  <h5 class="col-sm-8 offset-sm-2 mission_statement"><em>sonically mindful, handcrafted guitars.</em></h5>
+</div>
+
+
     <div class="container">
       <div class="row">
         <div class="col-offset-sm-1">
