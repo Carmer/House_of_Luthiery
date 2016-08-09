@@ -20,17 +20,15 @@ class Instrument < ActiveRecord::Base
   end
 
   def print_specs
-    output = specs.map do |spec|
+    specs.map do |spec|
       spec.description
-    end
-    output.join(", ")
+    end.join(", ")
   end
 
   def print_options
-    output = options.map do |spec|
+    options.map do |spec|
       spec.description
-    end
-    output.join(", ")
+    end.join(", ")
   end
 
   def update_related_models(params)
