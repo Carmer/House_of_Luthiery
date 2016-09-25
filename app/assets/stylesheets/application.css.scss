@@ -57,7 +57,7 @@ body {
     font-size: 15px;
     line-height: 1.4;
     font-family: roboto, Helvetica, Arial, sans-serif;
-  color: white;
+  color: black;
 }
 
 .spec_list {
@@ -91,7 +91,7 @@ h1  {
   line-height:45px;
   padding:0px 15px 0px 15px;
   background-color: white !important;
-  color:#fff;
+  color:black;
   border:0;
   border-radius: 3px;
   font-size:1.4em;
@@ -109,7 +109,7 @@ h1  {
   left:0;
   padding:0px 15px 0px 15px;
   background-color: white !important;
-  color:#fff;
+  color:black;
   border:0;
   border-radius: 3px;
   font-size:3em;
@@ -163,7 +163,7 @@ h1  {
 .content {
   background-color: rgba(0,0,0,.5);
   vertical-align: center;
-  margin: 5%;
+  margin: 17%;
   padding: 25px;
   border-radius: 3px;
 }
@@ -172,13 +172,6 @@ h1  {
   z-index: 5000;
 }
 
-
-.text {
-  // position: absolute;
-  background-color: black;
-  // margin-top: 35%;
-  // padding-top: 45px;
-}
 
 .title_text {
   position: absolute;
@@ -200,7 +193,7 @@ h1  {
 
   #menu_index{
     // display: none;
-    height: 95vh;
+    height: 8vh;
   }
 
   .title_text {
@@ -223,8 +216,8 @@ h1  {
     left:0;
     line-height:45px;
     padding:0px 15px 0px 15px;
-    background-color: black !important;
-    color:#fff;
+    background-color: white !important;
+    color:black;
     border:0;
     border-radius: 3px;
     font-size:3.4em;
